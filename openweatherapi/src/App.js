@@ -10,7 +10,7 @@ function App() {
       try {
         const data = await getWeatherByCity('São Paulo');
         setWeatherData(data);
-        console.log(data[0].temp);
+        console.log(data.temp);
       } catch (error) {
         console.error('Erro ao buscar dados:', error);
       }
@@ -21,11 +21,25 @@ function App() {
 
   return (
     <div className="App">
-      {weatherData ? (
-        <p style={{ color: 'green' }}>Temperatura: {weatherData[0].temp}</p>
-      ) : (
-        <p style={{ color: 'white' }}>Carregando...</p>
-      )}
+      <header>
+        <div>
+aaa
+        </div>
+        <div>
+aaa
+        </div>
+        <nav>
+          <a href="">home</a>
+          <a href="">weather</a>
+          <a href="">forecast</a>
+        </nav>
+
+      </header>
+
+      <main>
+
+
+      </main>
     </div>
   );
 }

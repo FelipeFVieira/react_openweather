@@ -11,10 +11,10 @@ export async function getWeatherByCity(city) {
             }
         });
         const dataObject = [
-            {temp: response.data.main.temp},
-            {feels_like: response.data.main.feels_like},
-            {humidity: response.data.main.humidity},
-            {pressure: response.data.main.pressure}
+            {temp: response.data.main.temp,
+            feels_like: response.data.main.feels_like,
+            humidity: response.data.main.humidity,
+            pressure: response.data.main.pressure}
 
         ]
         return dataObject
