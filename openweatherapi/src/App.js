@@ -1,6 +1,8 @@
+import './App.css';
 import React, { useState, useEffect } from 'react';
 import { getWeatherByCity } from './helpers/requests';
-import './App.css';
+import GalaxyNav from './components/GalaxyNav.js';
+import GalaxyMain from './components/GalaxyMain.js';
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -21,25 +23,9 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <div>
-aaa
-        </div>
-        <div>
-aaa
-        </div>
-        <nav>
-          <a href="">home</a>
-          <a href="">weather</a>
-          <a href="">forecast</a>
-        </nav>
+      <GalaxyNav/>
+      <GalaxyMain/>
 
-      </header>
-
-      <main>
-
-
-      </main>
     </div>
   );
 }
