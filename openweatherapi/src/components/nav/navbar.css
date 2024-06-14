@@ -34,3 +34,8 @@ text-decoration: none;
 color: white;
 font-size: 17px;
 }
+
+nav a:hover {
+    transform: scale(1.1); 
+    color: blueviolet;
+}

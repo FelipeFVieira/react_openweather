@@ -1,5 +1,5 @@
-import './GalaxyNav.css';
-import galaxyWeather from '../images/galaxyWeather.png';
+import './navbar.css';
+import galaxyWeather from '../../images/galaxyWeather.png';
 import React, { useState, useEffect } from 'react';
 
 
@@ -12,9 +12,9 @@ const GalaxyNav = () => {
             <p>GalaxyWeather</p>
         </div>
         <nav>
-            <a href="">HOME</a>
-            <a href="">WEATHER</a>
-            <a href="">FORECAST</a>
+            <a href="/">HOME</a>
+            <a href="/weather">WEATHER</a>
+            <a href="forecast">FORECAST</a>
         </nav>
     </div>
     )
